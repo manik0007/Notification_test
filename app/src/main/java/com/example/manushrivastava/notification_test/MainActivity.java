@@ -19,19 +19,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void NotiNoAutoCancel(View view)
-    {
-        NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.icon)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!");
-        NotificationManager mNotificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(1, mBuilder.build());
 
-    }
-    public void NotiAutoCancel(View view)
+    public void NotiNoAction(View view)
     {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
